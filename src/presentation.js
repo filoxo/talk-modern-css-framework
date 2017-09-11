@@ -20,12 +20,31 @@ import 'normalize.css';
 import 'spectacle/lib/themes/default/index.css';
 import 'spectacle-theme-nova/syntax/prism.nova.css';
 
-const theme = createTheme();
+const theme = createTheme(null, {
+  progress: {
+    bar: {
+      container: {
+        position: 'absolute',
+        height: '6px',
+        width: '100%',
+        bottom: 0,
+        left: 0,
+        transition: 'all .8s ease-in-out 0.2s',
+        zIndex: 1000
+      },
+      bar: {
+        height: '100%',
+        background: '#7bc2ca',
+        transition: 'all 0.3s ease-out'
+      }
+    }
+  }
+});
 
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck transitionDuration={500} theme={theme} progress="none">
+      <Deck transitionDuration={500} theme={theme} progress="bar">
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Spectacle Boilerplate
