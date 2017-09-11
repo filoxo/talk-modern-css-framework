@@ -15,27 +15,18 @@ import {
 } from "spectacle";
 
 // Import theme
-import createTheme from "spectacle/lib/themes/default";
+import createTheme from 'spectacle-theme-nova/bundle';
+import 'normalize.css';
+import 'spectacle/lib/themes/default/index.css';
+import 'spectacle-theme-nova/syntax/prism.nova.css';
 
-// Require CSS
-require("normalize.css");
-require("spectacle/lib/themes/default/index.css");
-
-const theme = createTheme({
-  primary: "white",
-  secondary: "#1F2022",
-  tertiary: "#03A9FC",
-  quartenary: "#CECECE"
-}, {
-  primary: "Montserrat",
-  secondary: "Helvetica"
-});
+const theme = createTheme();
 
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme} progress="bar">
-        <Slide transition={["zoom"]} bgColor="primary">
+      <Deck transitionDuration={500} theme={theme} progress="none">
+        <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Spectacle Boilerplate
           </Heading>
