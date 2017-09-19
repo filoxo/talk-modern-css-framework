@@ -15,82 +15,51 @@ import {
 } from 'spectacle'
 
 // Import theme
-import createTheme from 'spectacle/lib/themes/default'
+import createTheme from 'spectacle-theme-nova/bundle'
+import 'normalize.css'
+import 'spectacle/lib/themes/default/index.css'
+import 'spectacle-theme-nova/syntax/prism.nova.css'
 
-// Require CSS
-require('normalize.css')
-require('spectacle/lib/themes/default/index.css')
-
-const theme = createTheme(
-  {
-    primary: 'white',
-    secondary: '#1F2022',
-    tertiary: '#03A9FC',
-    quartenary: '#CECECE'
-  },
-  {
-    primary: 'Montserrat',
-    secondary: 'Helvetica'
+const theme = createTheme(null, {
+  progress: {
+    bar: {
+      container: {
+        position: 'absolute',
+        height: '6px',
+        width: '100%',
+        bottom: 0,
+        left: 0,
+        transition: 'all .8s ease-in-out 0.2s',
+        zIndex: 1000
+      },
+      bar: {
+        height: '100%',
+        background: '#7bc2ca',
+        transition: 'all 0.3s ease-out'
+      }
+    }
   }
-)
+})
 
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck
-        transition={['zoom', 'slide']}
-        transitionDuration={500}
-        theme={theme}
-        progress="bar"
-      >
-        <Slide transition={['zoom']} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
+      <Deck transitionDuration={500} theme={theme} progress="bar">
+        <Slide transition={['fade']} bgColor="primary">
+          <Heading size={2} lineHeight={1.3} textColor="heading">
+            Building a CSS pipeline using npm
           </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
+          <Text margin="10px 0 0" size={2} fit>
+            Create your own CSS framework today
           </Text>
         </Slide>
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>
-            Typography
+        <Slide transition={['fade']}>
+          <Heading size={1} lineHeight={1.3} textColor="heading">
+            Why?
           </Heading>
-          <Heading size={1} textColor="secondary">
-            Heading 1
-          </Heading>
-          <Heading size={2} textColor="secondary">
-            Heading 2
-          </Heading>
-          <Heading size={3} textColor="secondary">
-            Heading 3
-          </Heading>
-          <Heading size={4} textColor="secondary">
-            Heading 4
-          </Heading>
-          <Heading size={5} textColor="secondary">
-            Heading 5
-          </Heading>
-          <Text size={6} textColor="secondary">
-            Standard text
-          </Text>
         </Slide>
-        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>
-            Standard List
-          </Heading>
-          <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
-          </List>
-        </Slide>
-        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
-        </Slide>
+        <Slide transition={['fade']} />
+        <Slide transition={['fade']} />
       </Deck>
     )
   }
