@@ -11,7 +11,8 @@ import {
   List,
   Quote,
   Slide,
-  Text
+  Text,
+  Notes
 } from "spectacle";
 
 // Import theme
@@ -55,6 +56,15 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]}>
           <Heading size={1} lineHeight={1.3} textColor="heading">Why?</Heading>
+          <Notes>
+            <p>
+              I want to talk about what my motivations for this talk, for the most part these reasons are pretty timeless.
+              <br/>
+              Why should you ever build your own CSS framework?
+              <br/>
+              There are a lot of really good reasons actually.
+            </p>
+          </Notes>
         </Slide>
         <Slide transition={["fade"]}>
         </Slide>
