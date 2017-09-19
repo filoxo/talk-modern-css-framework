@@ -19,27 +19,9 @@ import createTheme from 'spectacle-theme-nova/bundle'
 import 'normalize.css'
 import 'spectacle/lib/themes/default/index.css'
 import 'spectacle-theme-nova/syntax/prism.nova.css'
+import './style.css'
 
-const theme = createTheme(null, {
-  progress: {
-    bar: {
-      container: {
-        position: 'absolute',
-        height: '6px',
-        width: '100%',
-        bottom: 0,
-        left: 0,
-        transition: 'all .8s ease-in-out 0.2s',
-        zIndex: 1000
-      },
-      bar: {
-        height: '100%',
-        background: '#7bc2ca',
-        transition: 'all 0.3s ease-out'
-      }
-    }
-  }
-})
+const theme = createTheme(null)
 
 export default class Presentation extends React.Component {
   render() {
@@ -58,7 +40,14 @@ export default class Presentation extends React.Component {
             Why?
           </Heading>
         </Slide>
-        <Slide transition={['fade']} />
+        <Slide transition={['fade']}>
+          <Heading size={1} lineHeight={1.3} textColor="heading">
+            Ideas
+          </Heading>
+          <List>
+            <ListItem>asdf</ListItem>
+          </List>
+        </Slide>
         <Slide transition={['fade']} />
       </Deck>
     )
