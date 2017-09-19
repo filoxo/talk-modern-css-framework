@@ -1,5 +1,5 @@
 // Import React
-import React from "react";
+import React from 'react'
 
 // Import Spectacle Core tags
 import {
@@ -13,40 +13,22 @@ import {
   Slide,
   Text,
   Notes
-} from "spectacle";
+} from 'spectacle'
 
 // Import theme
-import createTheme from 'spectacle-theme-nova/bundle';
-import 'normalize.css';
-import 'spectacle/lib/themes/default/index.css';
-import 'spectacle-theme-nova/syntax/prism.nova.css';
+import createTheme from 'spectacle-theme-nova/bundle'
+import 'normalize.css'
+import 'spectacle/lib/themes/default/index.css'
+import 'spectacle-theme-nova/syntax/prism.nova.css'
+import './style.css'
 
-const theme = createTheme(null, {
-  progress: {
-    bar: {
-      container: {
-        position: 'absolute',
-        height: '6px',
-        width: '100%',
-        bottom: 0,
-        left: 0,
-        transition: 'all .8s ease-in-out 0.2s',
-        zIndex: 1000
-      },
-      bar: {
-        height: '100%',
-        background: '#7bc2ca',
-        transition: 'all 0.3s ease-out'
-      }
-    }
-  }
-});
+const theme = createTheme(null)
 
 export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transitionDuration={500} theme={theme} progress="bar">
-        <Slide transition={["fade"]} bgColor="primary">
+        <Slide transition={['fade']} bgColor="primary">
           <Heading size={2} lineHeight={1.3} textColor="heading">
             Building a CSS pipeline using npm
           </Heading>
@@ -66,11 +48,36 @@ export default class Presentation extends React.Component {
             </p>
           </Notes>
         </Slide>
-        <Slide transition={["fade"]}>
+        <Slide transition={['fade']}>
+          <Heading size={1} lineHeight={1.3} textColor="heading">
+            Ideas
+          </Heading>
+          <List style={{ width: '50%', margin: '0 auto' }}>
+            <ListItem>Grey-scale</ListItem>
+            <ListItem>Themable</ListItem>
+            <ListItem>
+              <a href="https://medium.com/@matuzo/writing-css-with-accessibility-in-mind-8514a0007939">
+                Focus on Accessibility
+              </a>
+            </ListItem>
+            <Notes>
+              <p>Here are some ideas for you to go forth and try:</p>
+              <ul>
+                <li>A theme that uses only grey-scale colors</li>
+                <li>
+                  A framework that is themable using CSS custom properties
+                </li>
+                <li>Dive deep into enhancing accessibility with CSS</li>
+              </ul>
+            </Notes>
+          </List>
         </Slide>
-        <Slide transition={["fade"]}>
+        <Slide transition={['fade']}>
+          <Heading size={2} textColor="highlight">
+            Thanks!
+          </Heading>
         </Slide>
       </Deck>
-    );
+    )
   }
 }

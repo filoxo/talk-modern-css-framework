@@ -1,15 +1,15 @@
-import React from 'react';
-import { render } from "react-dom";
+import React from 'react'
+import { render } from 'react-dom'
 
-import Presentation from "./presentation";
-import registerServiceWorker from './registerServiceWorker';
+import Presentation from './presentation'
+import registerServiceWorker from './registerServiceWorker'
 
-const root = document.getElementById('root');
+const root = document.getElementById('root')
 
-render(<Presentation/>, root);
+render(<Presentation />, root)
 
 if (module.hot) {
-  module.hot.accept();
+  module.hot.accept()
 }
 
-registerServiceWorker();
+registerServiceWorker()
