@@ -12,7 +12,8 @@ import {
   Quote,
   Slide,
   Text,
-  Notes
+  Notes,
+  Appear
 } from 'spectacle'
 
 // Import theme
@@ -36,16 +37,40 @@ export default class Presentation extends React.Component {
             Create your own CSS framework today
           </Text>
         </Slide>
-        <Slide transition={["fade"]}>
-          <Heading size={1} lineHeight={1.3} textColor="heading">Why?</Heading>
+        <Slide transition={['fade']}>
+          <Heading size={1} lineHeight={1.3} textColor="heading">
+            Why?
+          </Heading>
+          <Appear>
+            <Text>Your brand ≠ Bootstrap</Text>
+          </Appear>
+          <Appear>
+            <Text>Decisions & Tradeoffs</Text>
+          </Appear>
+          <Appear>
+            <Text>Size</Text>
+          </Appear>
           <Notes>
             <p>
-              I want to talk about what my motivations for this talk, for the most part these reasons are pretty timeless.
-              <br/>
-              Why should you ever build your own CSS framework?
-              <br/>
-              There are a lot of really good reasons actually.
+              I want to talk about what my motivations for this talk, for the
+              most part these reasons are timeless.
+              <br />
+              Why should you ever build your own CSS framework? There are a lot
+              of really good reasons actually.
             </p>
+            <ul>
+              <li>
+                The first is your site's brand probably isn't exactly like
+                someone else's. The visual design of everything included in a
+                CSS framework is part of the image and experience you're giving
+                to your sites' visitors.
+              </li>
+              <li>
+                Not all frameworks are created equally. Every framework is a
+                compilation of decisions and tradeoffs. What browsers do you
+                need to support? Does it pass all accessibility checks?
+              </li>
+            </ul>
           </Notes>
         </Slide>
         <Slide transition={['fade']}>
