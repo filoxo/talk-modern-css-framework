@@ -23,7 +23,13 @@ import 'spectacle/lib/themes/default/index.css'
 import 'spectacle-theme-nova/syntax/prism.nova.css'
 import './style.css'
 
-const theme = createTheme(null)
+const theme = createTheme(null, {
+  components: {
+    text: {
+      fontSize: '2.6rem'
+    }
+  }
+})
 
 export default class Presentation extends React.Component {
   render() {
