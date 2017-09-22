@@ -26,5 +26,9 @@
       "prettier --write --no-semi --single-quote",
       "git add"
     ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
   }
 }
