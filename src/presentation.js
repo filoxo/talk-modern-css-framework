@@ -25,6 +25,11 @@ import 'spectacle-theme-nova/syntax/prism.nova.css'
 import './style.css'
 
 const theme = createTheme(null, {
+  global: {
+    body: {
+      fontSize: '2em'
+    }
+  },
   components: {
     text: {
       fontSize: '2.6rem'
