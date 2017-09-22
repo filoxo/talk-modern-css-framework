@@ -56,6 +56,9 @@ export default class Presentation extends React.Component {
           <Appear>
             <Text>Size</Text>
           </Appear>
+          <Appear>
+            <Text>Maintainability & Enhancements</Text>
+          </Appear>
           <Notes>
             <p>
               I want to talk about what my motivations for this talk, for the
@@ -74,7 +77,22 @@ export default class Presentation extends React.Component {
               <li>
                 Not all frameworks are created equally. Every framework is a
                 compilation of decisions and tradeoffs. What browsers do you
-                need to support? Does it pass all accessibility checks?
+                need to support? Does it pass all accessibility checks? By
+                creating your own, you're making these decisions rather than
+                accepting them from elsewhere.
+              </li>
+              <li>
+                While a definitive "average" for page size doesn't exist
+                (because all pages are different), we can observe the trends
+                that are happening over time and that is that page sizes are
+                getting bigger. Maybe you don't need to load a complex UI
+                library and roll your own instead.
+              </li>
+              <li>
+                Have any of you wanted to extend or maybe just tweak a few
+                things a large CSS framework like Bootstrap, Foundation, or
+                jQuery UI? Forking is an option, but maybe so it creating your
+                own.
               </li>
             </ul>
           </Notes>
