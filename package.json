@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "spectacle-terminal": "^0.3.0",
     "spectacle-theme-nova": "^1.4.1"
   },
   "devDependencies": {
