@@ -15,6 +15,7 @@ import {
   Notes,
   Appear
 } from 'spectacle'
+import Terminal from 'spectacle-terminal'
 
 // Import theme
 import createTheme from 'spectacle-theme-nova/bundle'
@@ -120,6 +121,35 @@ export default class Presentation extends React.Component {
               configure. npm's ubiquity is also a plus.
             </p>
           </Notes>
+        </Slide>
+        <Slide transition={['fade']}>
+          <Terminal
+            output={[
+              'npm test',
+              <div style={{ color: '#33B969' }}>TOTAL: 174 SUCCESS</div>,
+              <div>
+                <div>
+                  =============================== Coverage summary
+                  ===============================
+                </div>
+                <div style={{ color: '#DEC612' }}>
+                  Statements : 51.29% ( 278/542 )
+                </div>
+                <div style={{ color: '#EE5057' }}>
+                  Branches : 38.78% ( 95/245 )
+                </div>
+                <div style={{ color: '#EE5057' }}>
+                  Functions : 46.21% ( 61/132 )
+                </div>
+                <div style={{ color: '#DEC612' }}>
+                  Lines : 52.69% ( 274/520 )
+                </div>
+                <div>
+                  ================================================================================
+                </div>
+              </div>
+            ]}
+          />
         </Slide>
         <Slide transition={['fade']}>
           <Heading size={1} lineHeight={1.3} textColor="heading">
