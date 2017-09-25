@@ -1,7 +1,15 @@
 ul { list-style-type: disc; }
 li:before { content: none; }
 a {
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 1.5px dashed rgba(255,255,255,.5);
+  border-bottom: 1.5px dashed rgba(255, 255, 255, 0.5);
+  color: inherit;
+  text-decoration: none;
+}
+.sr {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
 }
