@@ -2,24 +2,25 @@
   width: 100%;
 }
 .termBtn {
-  background-color: #ff3b47;
-  border: 1px solid #000;
-  border-color: #9d252b;
+  background-color: #ddd;
+  border: 1px solid #cecece;
   border-radius: 50%;
   display: inline-block;
   height: 13px;
   margin: 0 4px;
   width: 13px;
 }
+.close {
+  background-color: #ff3b47;
+  border-color: #9d252b;
+}
 .minimize {
   background-color: #ffc100;
   border-color: #9d802c;
-  left: 11px;
 }
 .zoom {
   background-color: #00d742;
   border-color: #049931;
-  left: 16px;
 }
 .termMenu {
   align-items: center;
