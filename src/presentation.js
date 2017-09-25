@@ -229,7 +229,11 @@ export default class Presentation extends React.Component {
               </a>
             </ListItem>
             <ListItem>CSS-in-JS</ListItem>
-            <ListItem>Something useless</ListItem>
+            <ListItem>
+              <a href="https://www.youtube.com/watch?time_continue=2&v=JiXTVRXP_z0">
+                Build uselessware
+              </a>
+            </ListItem>
             <Notes>
               <p>Here are some ideas for you to go forth and try:</p>
               <ul>
