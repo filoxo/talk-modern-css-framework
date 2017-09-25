@@ -255,6 +255,16 @@ export default class Presentation extends React.Component {
           <Heading size={2} textColor="heading">
             Sources
           </Heading>
+          <List>
+            <ListItem>
+              <a href="https://filoxo.github.io/posts/build-a-css-framework-using-npm/">
+                Build a CSS framework using npm
+              </a>
+            </ListItem>
+            <ListItem>
+              <a href="https://github.com/postcss/postcss">PostCSS</a>
+            </ListItem>
+          </List>
         </Slide>
       </Deck>
     )
