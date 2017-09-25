@@ -15,7 +15,7 @@ import {
   Notes,
   Appear
 } from 'spectacle'
-import Terminal from 'spectacle-terminal'
+import SimpleTerminal from './SimpleTerminal'
 
 // Import theme
 import createTheme from 'spectacle-theme-nova/bundle'
@@ -60,7 +60,7 @@ export default class Presentation extends React.Component {
             <Text>Decisions & Tradeoffs</Text>
           </Appear>
           <Appear>
-            <Text>Size</Text>
+            <Text>Performance</Text>
           </Appear>
           <Appear>
             <Text>Maintainability & Enhancements</Text>
@@ -88,11 +88,11 @@ export default class Presentation extends React.Component {
                 accepting them from elsewhere.
               </li>
               <li>
-                While a definitive "average" for page size doesn't exist
-                (because all pages are different), we can observe the trends
-                that are happening over time and that is that page sizes are
-                getting bigger. Maybe you don't need to load a complex UI
-                library and roll your own instead.
+                Page sizes are getting bigger in the overall. Size is one aspect
+                to performance, but also realize that after downloading, the
+                browser needs to parse, evaluate, and render all the styles.
+                Maybe you don't need to load a complex UI library and roll your
+                own instead.
               </li>
               <li>
                 Have any of you wanted to extend or maybe just tweak a few
@@ -128,33 +128,93 @@ export default class Presentation extends React.Component {
           </Notes>
         </Slide>
         <Slide transition={['fade']}>
-          <Terminal
-            output={[
-              'npm test',
-              <div style={{ color: '#33B969' }}>TOTAL: 174 SUCCESS</div>,
+          <SimpleTerminal>
+            <Appear transitionDuration={0}>
+              <div>» yarn init -y</div>
+            </Appear>
+            <Appear transitionDuration={0}>
               <div>
                 <div>
-                  =============================== Coverage summary
-                  ===============================
-                </div>
-                <div style={{ color: '#DEC612' }}>
-                  Statements : 51.29% ( 278/542 )
-                </div>
-                <div style={{ color: '#EE5057' }}>
-                  Branches : 38.78% ( 95/245 )
-                </div>
-                <div style={{ color: '#EE5057' }}>
-                  Functions : 46.21% ( 61/132 )
-                </div>
-                <div style={{ color: '#DEC612' }}>
-                  Lines : 52.69% ( 274/520 )
+                  <span style={{ color: '#33B969' }}>success</span> Saved
+                  package.json
                 </div>
                 <div>
-                  ================================================================================
+                  <span role="img" aria-label="stars emoji">
+                    ✨
+                  </span>{' '}
+                  Done in 0.04s.
                 </div>
               </div>
-            ]}
-          />
+            </Appear>
+            <Appear transitionDuration={0}>
+              <div>» yarn add postcss-cli postcss-cssnext</div>
+            </Appear>
+            <Appear transitionDuration={0}>
+              <div>
+                <div>
+                  [1/4]{' '}
+                  <span role="img" aria-label="search emoji">
+                    🔍
+                  </span>{' '}
+                  Resolving packages...
+                </div>
+                <div>
+                  [2/4]{' '}
+                  <span role="img" aria-label="truck emoji">
+                    🚚
+                  </span>{' '}
+                  Fetching packages...
+                </div>
+                <div>
+                  [3/4]{' '}
+                  <span role="img" aria-label="link emoji">
+                    🔗
+                  </span>{' '}
+                  Linking dependencies...
+                </div>
+                <div>
+                  [4/4]{' '}
+                  <span role="img" aria-label="document emoji">
+                    📃
+                  </span>{' '}
+                  Building fresh packages...
+                </div>
+                <div>
+                  <span role="img" aria-label="stars emoji">
+                    ✨
+                  </span>{' '}
+                  Done in 13.86s.
+                </div>
+              </div>
+            </Appear>
+          </SimpleTerminal>
+        </Slide>
+        <Slide transition={['fade']}>
+          <Heading size={1} lineHeight={1.3} textColor="highlight" fit>
+            PostCSS + CSSNext
+          </Heading>
+          <div style={{ textAlign: 'center', lineHeight: 1.8 }}>
+            PostCSS = CSS + JS plugins
+            <br />
+            CSSNext = Tomorrow’s CSS syntax today
+          </div>
+          <Notes>
+            <p>
+              PostCSS is a great tool that can replace the CSS preprocessing
+              frameworks. The main reason why I prefer PostCSS is that it brings
+              you closer to native CSS syntax, but that's just personal
+              preference. The most popular PostCSS plugin is Autoprefixer which
+              adds all the necessary vendor prefixes using data from CanIUse.
+              That alone is a great feature.
+            </p>
+            <p>
+              Next we'll couple that with CSSNext, a PostCSS plugin that allows
+              you to use tomorrow's CSS syntax, today. Its sort of like Babel
+              for JavaScript. This way you can use the newest language features
+              with fallbacks or polyfills depending on your browser
+              compatibility target. We'll be using some of these features today.
+            </p>
+          </Notes>
         </Slide>
         <Slide transition={['fade']}>
           <Heading size={1} lineHeight={1.3} textColor="heading">
@@ -168,6 +228,8 @@ export default class Presentation extends React.Component {
                 Focus on Accessibility
               </a>
             </ListItem>
+            <ListItem>CSS-in-JS</ListItem>
+            <ListItem>Something useless</ListItem>
             <Notes>
               <p>Here are some ideas for you to go forth and try:</p>
               <ul>
@@ -183,6 +245,11 @@ export default class Presentation extends React.Component {
         <Slide transition={['fade']}>
           <Heading size={2} textColor="highlight">
             Thanks!
+          </Heading>
+        </Slide>
+        <Slide transition={['fade']}>
+          <Heading size={2} textColor="heading">
+            Sources
           </Heading>
         </Slide>
       </Deck>
