@@ -13,7 +13,9 @@ import {
   Slide,
   Text,
   Notes,
-  Appear
+  Appear,
+  Code,
+  CodePane
 } from 'spectacle'
 import SimpleTerminal from './SimpleTerminal'
 
@@ -215,6 +217,27 @@ export default class Presentation extends React.Component {
               compatibility target. We'll be using some of these features today.
             </p>
           </Notes>
+        </Slide>
+        <Slide transition={['fade']}>
+          <Heading size={3} textColor="highlight">
+            Next
+          </Heading>
+          <ol style={{ textAlign: 'left' }}>
+            <li>
+              Create <Code>src</Code> directory
+            </li>
+            <li>
+              Create <Code>main.css</Code> file in <Code>src</Code>
+            </li>
+            <li>Add npm script to run postcss (in package.json)</li>
+          </ol>
+          <CodePane lang="json" className="language-json">
+            {`"scripts": {
+  "build": "postcss 'src/main.css' 
+              -o 'dist/main.min.css' 
+              -use ['postcss-cssnext']"
+}`}
+          </CodePane>
         </Slide>
         <Slide transition={['fade']}>
           <Heading size={1} lineHeight={1.3} textColor="heading">
