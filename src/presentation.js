@@ -126,6 +126,11 @@ export default class Presentation extends React.Component {
             </p>
           </Notes>
         </Slide>
+        <Slide bgImage="./LEGO-Loop.gif">
+          <div style={{ color: '#666', marginTop: '85vh', textAlign: 'right' }}>
+            Credit: Chris Gannon
+          </div>
+        </Slide>
         <Slide transition={['fade']}>
           <SimpleTerminal>
             <Appear transitionDuration={0}>
