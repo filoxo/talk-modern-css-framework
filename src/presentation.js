@@ -216,31 +216,35 @@ export default class Presentation extends React.Component {
           </Notes>
         </Slide>
         <Slide transition={['fade']}>
-          <Heading size={3} textColor="highlight">
-            Next
-          </Heading>
-          <ol style={{ textAlign: 'left' }}>
-            <li>
-              Create <Code>src</Code> directory
-            </li>
-            <li>
-              Create <Code>main.css</Code> file in <Code>src</Code>
-            </li>
-            <li>Add npm script to run postcss (in package.json)</li>
-          </ol>
-          <CodePane lang="json" className="language-json">
-            {`"scripts": {
+          <div style={{ maxWidth: '100vw' }}>
+            <Heading size={3} textColor="highlight">
+              Next
+            </Heading>
+            <List ordered style={{ textAlign: 'left' }}>
+              <ListItem>
+                Create <Code>src</Code> directory
+              </ListItem>
+              <ListItem>
+                Create <Code>main.css</Code> file in <Code>src</Code>
+              </ListItem>
+              <ListItem>
+                Add npm script to run postcss (in package.json)
+              </ListItem>
+            </List>
+            <CodePane fit lang="json" className="language-json">
+              {`"scripts": {
   "build": "postcss 'src/main.css' 
               -o 'dist/main.min.css' 
               -use ['postcss-cssnext']"
 }`}
-          </CodePane>
+            </CodePane>
+          </div>
         </Slide>
         <Slide transition={['fade']}>
           <Heading size={1} lineHeight={1.3} textColor="heading">
             Ideas
           </Heading>
-          <List style={{ width: '50%', margin: '0 auto' }}>
+          <List style={{ width: '50%', margin: '0 auto', minWidth: 320 }}>
             <ListItem>Grey-scale</ListItem>
             <ListItem>Themable</ListItem>
             <ListItem>
