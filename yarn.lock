@@ -5826,7 +5826,7 @@ react-dev-utils@^4.0.0:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-"react-dom@^15 || ^16", react-dom@^15.4.1, react-dom@^15.4.2, react-dom@^15.6.1:
+"react-dom@^15 || ^16", react-dom@^15.4.2, react-dom@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.1.tgz#2cb0ed4191038e53c209eb3a79a23e2a4cf99470"
   dependencies:
@@ -5873,7 +5873,7 @@ react-typography@^0.15.10:
   version "0.15.10"
   resolved "https://registry.yarnpkg.com/react-typography/-/react-typography-0.15.10.tgz#1ece7bbd856735bd2ada4f6c40be508e994655a8"
 
-"react@^15 || ^16", react@^15.4.1, react@^15.4.2, react@^15.6.1:
+"react@^15 || ^16", react@^15.4.2, react@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.1.tgz#baa8434ec6780bde997cdc380b79cd33b96393df"
   dependencies:
@@ -6546,14 +6546,6 @@ spectacle-scripts@1.0.15:
     whatwg-fetch "2.0.3"
   optionalDependencies:
     fsevents "1.1.2"
-
-spectacle-terminal@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/spectacle-terminal/-/spectacle-terminal-0.3.0.tgz#74396bd6c8e6c6481ec16735f911625ee76f5356"
-  dependencies:
-    classnames "^2.2.5"
-    react "^15.4.1"
-    react-dom "^15.4.1"
 
 spectacle-theme-nova@^1.4.1:
   version "1.4.1"
