@@ -12,7 +12,10 @@ import {
   Notes,
   Appear,
   Code,
-  CodePane
+  CodePane,
+  Layout,
+  Fit,
+  Fill
 } from 'spectacle'
 import SimpleTerminal from './SimpleTerminal'
 
@@ -47,6 +50,34 @@ export default class Presentation extends React.Component {
           <Text margin="10px 0 0" size={2} fit>
             Create your own CSS framework today
           </Text>
+        </Slide>
+        <Slide transition={['fade']}>
+          <Heading
+            size={2}
+            lineHeight={1.3}
+            textColor="heading"
+            textAlign="left"
+          >
+            About me
+          </Heading>
+          <Layout>
+            <Fit>
+              <img
+                src="./2017.jpg"
+                alt="Carlos Filoteo"
+                style={{
+                  maxWidth: '20vw',
+                  marginRight: '1em',
+                  border: '3px solid #fff',
+                  borderRadius: '100%'
+                }}
+              />
+            </Fit>
+            <Fill>
+              <Text textAlign="left">Software Engineer, AncestryDNA</Text>
+              <Text textAlign="left">Las Vegas, NV</Text>
+            </Fill>
+          </Layout>
         </Slide>
         <Slide transition={['fade']}>
           <Heading size={1} lineHeight={1.3} textColor="heading">
@@ -107,7 +138,7 @@ export default class Presentation extends React.Component {
             So why npm scripts?
           </Heading>
           <List style={{ width: '50%', margin: '0 auto' }}>
-            <ListItem>Small tasks</ListItem>
+            <ListItem>Single responsibility</ListItem>
             <ListItem>Composability</ListItem>
             <ListItem>Abstracted configuration</ListItem>
           </List>
