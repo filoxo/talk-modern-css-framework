@@ -225,12 +225,12 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={['fade']}>
           <Heading size={1} lineHeight={1.3} textColor="highlight" fit>
-            PostCSS + CSSNext
+            PostCSS + cssnext
           </Heading>
           <div style={{ textAlign: 'center', lineHeight: 1.8 }}>
             PostCSS = CSS + JS plugins
             <br />
-            CSSNext = Tomorrow’s CSS syntax today
+            cssnext = Tomorrow’s CSS syntax today
           </div>
           <Notes>
             <p>
@@ -242,7 +242,7 @@ export default class Presentation extends React.Component {
               That alone is a great feature.
             </p>
             <p>
-              Next we'll couple that with CSSNext, a PostCSS plugin that allows
+              Next we'll couple that with cssnext, a PostCSS plugin that allows
               you to use tomorrow's CSS syntax, today. Its sort of like Babel
               for JavaScript. This way you can use the newest language features
               with fallbacks or polyfills depending on your browser
