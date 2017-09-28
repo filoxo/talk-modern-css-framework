@@ -18,6 +18,7 @@ import {
   Fill
 } from 'spectacle'
 import SimpleTerminal from './SimpleTerminal'
+import CodeSlide from 'spectacle-code-slide'
 
 // Import theme
 import createTheme from 'spectacle-theme-nova/bundle'
@@ -29,12 +30,10 @@ import './style.css'
 const theme = createTheme(null, {
   global: {
     body: {
-      fontSize: '2em'
-    }
-  },
-  components: {
-    text: {
-      fontSize: '2.6rem'
+      fontSize: '5vmin'
+    },
+    h1: {
+      fontSize: '1em !important'
     }
   }
 })
@@ -75,7 +74,7 @@ export default class Presentation extends React.Component {
             </Fit>
             <Fill>
               <Text textAlign="left">Software Engineer, AncestryDNA</Text>
-              <Text textAlign="left">Las Vegas, NV</Text>
+              <Text textAlign="left">@cfiloteo12</Text>
             </Fill>
           </Layout>
         </Slide>
@@ -254,7 +253,7 @@ export default class Presentation extends React.Component {
         <Slide transition={['fade']}>
           <div style={{ maxWidth: '100vw' }}>
             <Heading size={3} textColor="highlight">
-              Next
+              TODO, pt. 1
             </Heading>
             <List ordered style={{ textAlign: 'left' }}>
               <ListItem>
@@ -271,11 +270,33 @@ export default class Presentation extends React.Component {
               {`"scripts": {
   "build": "postcss 'src/main.css' 
               -o 'dist/main.min.css' 
-              -use ['postcss-cssnext']"
+              --use postcss-cssnext"
 }`}
             </CodePane>
+            <List ordered start={4}>
+              <ListItem>
+                Open up <Code>main.css</Code> and write
+              </ListItem>
+            </List>
           </div>
         </Slide>
+        <CodeSlide
+          transition={['fade']}
+          lang="css"
+          code={`:root {
+    --color-primary: #34495E;
+    --color-secondary: #871A1A;
+}
+
+body {
+  background: #eee;
+}`}
+          ranges={[
+            { loc: [0, 1], title: 'Root pseudo element' },
+            { loc: [1, 2], note: 'Heres a note!' },
+            { loc: [2, 3] }
+          ]}
+        />
         <Slide transition={['fade']}>
           <Heading size={1} lineHeight={1.3} textColor="heading">
             Ideas
