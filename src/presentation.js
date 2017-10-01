@@ -284,8 +284,8 @@ export default class Presentation extends React.Component {
           transition={['fade']}
           lang="css"
           code={`:root {
-  --primary: var(--us-primary);
-  --secondary: var(--us-secondary);
+  --primary: #3A539B;
+  --secondary: #B50000;
   --muted: #0008;
   --transition: .1s transform ease-in-out;
   font-size: 18px;
@@ -322,7 +322,14 @@ button {
 a, .link {
   color: var(--secondary);
 }`}
-          ranges={[{}]}
+          ranges={[
+            { loc: [0, 1], title: ':root pseudo class' },
+            { loc: [1, 5], title: 'Custom properties (CSS variables)' },
+            { loc: [3, 4], title: 'RGBA Hex syntax' },
+            { loc: [9, 10], title: 'System-ui font' },
+            { loc: [14, 24], title: 'Nesting' },
+            { loc: [13, 14], title: 'rem unit' }
+          ]}
         />
         <Slide transition={['fade']}>
           <Heading size={1} lineHeight={1.3} textColor="heading">
