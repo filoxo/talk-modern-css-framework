@@ -284,18 +284,45 @@ export default class Presentation extends React.Component {
           transition={['fade']}
           lang="css"
           code={`:root {
-    --color-primary: #34495E;
-    --color-secondary: #871A1A;
+  --primary: var(--us-primary);
+  --secondary: var(--us-secondary);
+  --muted: #0008;
+  --transition: .1s transform ease-in-out;
+  font-size: 18px;
 }
 
 body {
-  background: #eee;
+  font-family: system-ui;
+}
+
+button {
+  font-size: 1rem;
+  &.primary {
+      background: var(--primary);
+      transition: var(--transition);
+      &:hover {
+        transform: scale(1.1);
+      }
+      &:active {
+        transform: translateY(5%);
+      }
+  }
+  &.secondary {
+      background: var(--secondary);
+      transition: var(--transition);
+      &:hover {
+        transform: scale(1.1);
+      }
+      &:active {
+        transform: translateY(5%);
+      }
+  }
+}
+
+a, .link {
+  color: var(--secondary);
 }`}
-          ranges={[
-            { loc: [0, 1], title: 'Root pseudo element' },
-            { loc: [1, 2], note: 'Heres a note!' },
-            { loc: [2, 3] }
-          ]}
+          ranges={[{}]}
         />
         <Slide transition={['fade']}>
           <Heading size={1} lineHeight={1.3} textColor="heading">
@@ -344,6 +371,9 @@ body {
             </ListItem>
             <ListItem>
               <a href="https://github.com/postcss/postcss">PostCSS</a>
+            </ListItem>
+            <ListItem>
+              <a href="https://jonathantneal.github.io/css-db/">cssdb</a>
             </ListItem>
           </List>
         </Slide>
