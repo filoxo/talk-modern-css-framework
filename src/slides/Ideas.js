@@ -3,7 +3,7 @@ import { Slide, Heading, List, ListItem, Notes } from 'spectacle'
 
 export default (
   <Slide transition={['fade']}>
-    <Heading size={1} lineHeight={1.3} textColor="heading">
+    <Heading size={2} lineHeight={1.3} textColor="heading">
       Ideas
     </Heading>
     <List style={{ width: '50%', margin: '0 auto', minWidth: 320 }}>
