@@ -7,7 +7,7 @@ export default (
       <Heading size={3} textColor="highlight">
         TODO, pt. 1
       </Heading>
-      <List ordered style={{ textAlign: 'left' }}>
+      <List ordered style={{ textAlign: 'left', marginBottom: 0 }}>
         <ListItem>
           Create <Code>src</Code> directory
         </ListItem>
@@ -16,14 +16,19 @@ export default (
         </ListItem>
         <ListItem>Add npm script to run postcss (in package.json)</ListItem>
       </List>
-      <CodePane fit lang="json" className="language-json">
+      <CodePane
+        fit
+        lang="json"
+        className="language-json"
+        style={{ fontSize: '3.5vmin' }}
+      >
         {`"scripts": {
   "build": "postcss 'src/main.css' 
               -o 'dist/main.min.css' 
               --use postcss-cssnext"
 }`}
       </CodePane>
-      <List ordered start={4}>
+      <List ordered start={4} style={{ marginTop: 0 }}>
         <ListItem>
           Open up <Code>main.css</Code> and write
         </ListItem>
