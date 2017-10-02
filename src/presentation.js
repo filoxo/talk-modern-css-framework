@@ -16,9 +16,6 @@ const theme = createTheme(null, {
   global: {
     body: {
       fontSize: '5vmin'
-    },
-    h1: {
-      fontSize: '1em !important'
     }
   }
 })

@@ -5,6 +5,7 @@ export default (
   <CodeSlide
     transition={['fade']}
     lang="css"
+    className="customCodeSlide"
     code={`:root {
   --primary: #3A539B;
   --secondary: #B50000;

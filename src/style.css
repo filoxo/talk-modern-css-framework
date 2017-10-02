@@ -13,3 +13,6 @@ a {
   top: auto;
   width: 1px;
 }
+.customCodeSlide h1 {
+  font-size: 1em !important;
+}
