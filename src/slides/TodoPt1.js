@@ -24,7 +24,7 @@ export default (
       >
         {`"scripts": {
   "build": "postcss 'src/main.css' 
-              -o 'dist/main.min.css' 
+              --out 'dist/main.min.css' 
               --use postcss-cssnext"
 }`}
       </CodePane>
