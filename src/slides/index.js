@@ -8,6 +8,8 @@ import PostCSS from './PostCSS'
 import TodoPt1 from './TodoPt1'
 import CodeMainCss from './CodeMainCss'
 import TodoPt2 from './TodoPt2'
+import TermAddDevDeps from './TermAddDevDeps'
+import Demo1 from './Demo1'
 import Ideas from './Ideas'
 import Thanks from './Thanks'
 import Sources from './Sources'
@@ -23,6 +25,8 @@ const Slides = [
   TodoPt1,
   CodeMainCss,
   TodoPt2,
+  TermAddDevDeps,
+  Demo1,
   Ideas,
   Thanks,
   Sources
