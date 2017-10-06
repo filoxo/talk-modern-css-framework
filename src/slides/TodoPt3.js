@@ -1,5 +1,5 @@
 import React from 'react'
-import { Slide, Heading, List, ListItem, CodePane, Appear } from 'spectacle'
+import { Slide, List, ListItem, CodePane, Appear } from 'spectacle'
 import SimpleTerminal from '../SimpleTerminal'
 
 export default (
