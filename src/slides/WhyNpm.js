@@ -9,7 +9,7 @@ export default (
     <List style={{ width: '50%', margin: '0 auto' }}>
       <ListItem>Single responsibility</ListItem>
       <ListItem>Composability</ListItem>
-      <ListItem>Abstracted configuration</ListItem>
+      <ListItem>Huge, active ecosystem</ListItem>
     </List>
     <Notes>
       <p>
