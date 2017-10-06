@@ -1,9 +1,10 @@
 import React from 'react'
-import { Slide, Appear } from 'spectacle'
+import { Slide, Appear, Heading } from 'spectacle'
 import SimpleTerminal from '../SimpleTerminal'
 
 export default (
   <Slide transition={['fade']}>
+    <Heading size={3}>Initialize project</Heading>
     <SimpleTerminal>
       <Appear transitionDuration={0}>
         <div>» yarn init -y</div>
