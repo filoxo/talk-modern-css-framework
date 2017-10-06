@@ -4,10 +4,7 @@ import { Slide, Heading, List, ListItem, CodePane, Code } from 'spectacle'
 export default (
   <Slide transition={['fade']}>
     <div style={{ maxWidth: '100vw' }}>
-      <Heading size={3} textColor="highlight">
-        TODO, pt. 1
-      </Heading>
-      <List ordered style={{ textAlign: 'left', marginBottom: 0 }}>
+      <List ordered style={{ textAlign: 'left', marginBottom: 0 }} start={3}>
         <ListItem>
           Create <Code>src</Code> directory
         </ListItem>
@@ -24,13 +21,13 @@ export default (
       >
         {`"scripts": {
   "build": "postcss 'src/main.css' 
-              --out 'dist/main.min.css' 
+              --output 'dist/main.css' 
               --use postcss-cssnext"
 }`}
       </CodePane>
-      <List ordered start={4} style={{ marginTop: 0 }}>
+      <List ordered start={6} style={{ marginTop: 0 }}>
         <ListItem>
-          Open up <Code>main.css</Code> and write
+          Open up <Code>main.css</Code> and begin writing!
         </ListItem>
       </List>
     </div>

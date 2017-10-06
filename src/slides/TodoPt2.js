@@ -4,10 +4,7 @@ import { Slide, Heading, List, ListItem, CodePane, Code } from 'spectacle'
 export default (
   <Slide transition={['fade']}>
     <div style={{ maxWidth: '100vw' }}>
-      <Heading size={3} textColor="highlight">
-        TODO, pt. 2
-      </Heading>
-      <List ordered style={{ textAlign: 'left', marginBottom: 0 }}>
+      <List ordered style={{ textAlign: 'left', marginBottom: 0 }} start={7}>
         <ListItem>
           Create <Code>index.html</Code>
         </ListItem>

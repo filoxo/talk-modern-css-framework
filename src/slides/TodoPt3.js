@@ -1,35 +1,47 @@
 import React from 'react'
-import { Slide, Heading, List, ListItem, CodePane, Code } from 'spectacle'
+import { Slide, Heading, List, ListItem, CodePane, Appear } from 'spectacle'
+import SimpleTerminal from '../SimpleTerminal'
 
 export default (
   <Slide transition={['fade']}>
     <div style={{ maxWidth: '100vw' }}>
-      <Heading size={3} textColor="highlight">
-        TODO, pt. 3
-      </Heading>
-      <List ordered style={{ textAlign: 'left', marginBottom: 0 }}>
-        <ListItem>
-          Create <Code>index.html</Code>
-        </ListItem>
-        <ListItem>Populate with content</ListItem>
+      <List ordered style={{ textAlign: 'left', marginBottom: 0 }} start={7}>
+        <ListItem>Add script to watch for changes</ListItem>
       </List>
       <CodePane
         fit
-        lang="html"
-        className="language-html"
+        lang="json"
+        className="language-json"
         style={{ fontSize: '3.5vmin' }}
       >
-        {`...
-<link rel="stylesheet" href="dist/main.min.css">
-...   
-<section>
-  <h2>Buttons</h2>
-  <div>
-    <button class="primary" type="button">Primary</button>
-    <button class="secondary" type="button">Secondary</button>
-  </div>
-</section>`}
+        {`"scripts": {
+    ...
+    "build:watch": "npm run build -- -w",
+}`}
       </CodePane>
+      <List ordered style={{ textAlign: 'left', marginTop: 0 }} start={8}>
+        <ListItem>Start the server</ListItem>
+      </List>
+      <SimpleTerminal>
+        <Appear transitionDuration={0}>
+          <div>
+            <span style={{ opacity: 0.6 }}>$</span> npm run build:watch
+          </div>
+        </Appear>
+        <Appear transitionDuration={0}>
+          <div>
+            <div>> test-css@1.0.0 build /Users/cfiloteo/dev/test-css</div>
+            <div>
+              > postcss 'src/main.css' -o 'dist/main.css' -u postcss-cssnext
+              "-w"
+            </div>
+            <div style={{ color: '#21D726' }}>
+              ✔ Finished src/main.css (123 ms)
+            </div>
+            <div style={{ color: '#6EC9FD' }}>Waiting for file changes...</div>
+          </div>
+        </Appear>
+      </SimpleTerminal>
     </div>
   </Slide>
 )
