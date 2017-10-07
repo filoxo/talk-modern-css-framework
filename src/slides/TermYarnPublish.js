@@ -6,7 +6,9 @@ export default (
   <Slide transition={['fade']}>
     <SimpleTerminal>
       <Appear transitionDuration={0}>
-        <div>» npm publish</div>
+        <div>
+          <span style={{ opacity: 0.6 }}>$</span> npm publish
+        </div>
       </Appear>
       <Appear transitionDuration={0}>
         <div>
@@ -19,8 +21,12 @@ export default (
         </div>
       </Appear>
       <Appear transitionDuration={0}>
-        <div style={{ color: '#33B969' }}>✔ Finished src/main.css (867 ms)</div>
-        <div>+ new-css@1.0.0</div>
+        <div>
+          <div style={{ color: '#21D726' }}>
+            ✔ Finished src/main.css (867 ms)
+          </div>
+          <div>+ new-css@1.0.0</div>
+        </div>
       </Appear>
     </SimpleTerminal>
   </Slide>
