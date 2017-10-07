@@ -18,6 +18,9 @@ export default (
     <Appear>
       <Text>Maintainability & Enhancements</Text>
     </Appear>
+    <Appear>
+      <Text>Experience</Text>
+    </Appear>
     <Notes>
       <p>
         I want to talk about what my motivations for this talk, for the most
@@ -50,6 +53,13 @@ export default (
           Have any of you wanted to extend or maybe just tweak a few things a
           large CSS framework like Bootstrap, Foundation, or jQuery UI? Forking
           is an option, but maybe so it creating your own.
+        </li>
+        <li>
+          Sometimes you just have to do things from scratch just for the
+          experience. You actually get to encounter those problems that require
+          design decisions and tradeoffs. You get to fight the cascade,
+          understand more in-depth concepts, and experiment with new features.
+          You can really hone the skills of our craft.
         </li>
       </ul>
     </Notes>
