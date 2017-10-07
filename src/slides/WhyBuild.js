@@ -4,7 +4,7 @@ import { Slide, Heading, Text, Appear, Notes } from 'spectacle'
 export default (
   <Slide transition={['fade']}>
     <Heading size={2} lineHeight={1.3} textColor="heading">
-      Why?
+      Reasons & Movtivations
     </Heading>
     <Appear>
       <Text>Your brand ≠ Bootstrap</Text>
