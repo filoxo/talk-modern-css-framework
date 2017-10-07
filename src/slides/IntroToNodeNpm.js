@@ -1,5 +1,5 @@
 import React from 'react'
-import { Slide, Heading, Text, Appear, Notes } from 'spectacle'
+import { Slide, Notes } from 'spectacle'
 
 export default (
   <Slide transition={['fade']}>
