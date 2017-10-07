@@ -4,7 +4,7 @@ import twitterSvg from '../twitter.svg'
 
 export default (
   <Slide transition={['fade']}>
-    <Heading size={2} lineHeight={1.3} textColor="heading" textAlign="left">
+    <Heading size={2} lineHeight={1.3} textColor="heading">
       About me
     </Heading>
     <Layout>
@@ -14,13 +14,13 @@ export default (
           alt="Carlos Filoteo"
           style={{
             maxWidth: '15vw',
-            marginRight: '1em',
+            margin: '0 1em',
             border: '3px solid #fff',
             borderRadius: '100%'
           }}
         />
       </Fit>
-      <Fill>
+      <Fill style={{ marginTop: '3vmin' }}>
         <Text textAlign="left">Software Engineer, AncestryDNA</Text>
         <Text textAlign="left">
           <img
