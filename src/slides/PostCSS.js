@@ -7,7 +7,7 @@ export default (
       PostCSS + cssnext
     </Heading>
     <div style={{ textAlign: 'center', lineHeight: 1.8 }}>
-      PostCSS = CSS + JS plugns
+      PostCSS = CSS + JS plugins
       <br />
       cssnext = Tomorrow’s CSS syntax today
     </div>
