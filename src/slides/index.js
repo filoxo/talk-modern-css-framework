@@ -12,6 +12,7 @@ import TodoPt2 from './TodoPt2'
 import TermAddDevDeps from './TermAddDevDeps'
 import TodoPt3 from './TodoPt3'
 import Demo1 from './Demo1'
+import TermYarnPublish from './TermYarnPublish'
 import Ideas from './Ideas'
 import Thanks from './Thanks'
 import Sources from './Sources'
@@ -31,6 +32,7 @@ const Slides = [
   TermAddDevDeps,
   TodoPt3,
   Demo1,
+  TermYarnPublish,
   Ideas,
   Thanks,
   Sources
