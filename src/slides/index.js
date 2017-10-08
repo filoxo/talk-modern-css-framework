@@ -12,6 +12,7 @@ import CodeMainCss from './CodeMainCss'
 import TodoPt2 from './TodoPt2'
 import TermAddDevDeps from './TermAddDevDeps'
 import TodoPt3 from './TodoPt3'
+import TodoPt4 from './TodoPt4'
 import Demo1 from './Demo1'
 import TermYarnPublish from './TermYarnPublish'
 import Ideas from './Ideas'
@@ -33,6 +34,7 @@ const Slides = [
   TodoPt2,
   TermAddDevDeps,
   TodoPt3,
+  TodoPt4,
   Demo1,
   TermYarnPublish,
   Ideas,
