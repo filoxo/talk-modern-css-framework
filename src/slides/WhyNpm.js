@@ -9,20 +9,24 @@ export default (
     <List style={{ width: '50%', margin: '0 auto' }}>
       <ListItem>Single responsibility</ListItem>
       <ListItem>Composability</ListItem>
-      <ListItem>Huge, active ecosystem</ListItem>
+      <ListItem>Shareability</ListItem>
     </List>
     <Notes>
       <p>
-        So why use npm scripts as the build tool? If you're not familiar with
-        npm, it is the largest software registry and isn't limited to
-        JavaScript. On your machine, it will help you manage your projects
-        dependencies (like Bower), define executable scripts (like Grunt and
-        Gulp), and manage settings and metadata.
+        So why use npm scripts as the build tool? npm scripts if well written
+        can be ideal for creating small tasks that have a single responsibility.
+        You can define that one thing you want it to do well.
       </p>
       <p>
-        Using npm has simplified my development process because it replaces 2
-        other tools. That means less things to install and configure. npm's
-        ubiquity is also a plus.
+        That then makes for easier composability. Given tasks A, B, and C, you
+        can easily have task D that runs all of them.
+      </p>
+      <p>
+        npm scripts are so commonly used that npm the tool has shortcuts for
+        them so there's usually a shared standard to get started with npm
+        projects. This means that I can reasonably expect to clone a project,
+        npm install, then run `npm start`, and have a working development setup.
+        Its awesome!
       </p>
     </Notes>
   </Slide>

@@ -13,10 +13,11 @@ export default (
     <Notes>
       <p>
         I want to talk about what npm in case there are some people don't have
-        much experience with it. npm is actually two things: 1. it is the code
-        repository where you can publish,share, and download code; and 2. it is
-        also a commandline tool for interacting with the main npm source
-        repository. Our usage of npm today will be the latter.
+        much experience with it. npm is actually two things: 1. it is the
+        largest software registry where anyone can publish,share, and download
+        code (and is not limited to JavaScript); and 2. it is also a commandline
+        tool for interacting with the main npm source repository. Our usage of
+        npm today will be the latter.
       </p>
       <p>
         npm ships with every installation of Node so once you have Node
