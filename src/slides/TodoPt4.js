@@ -11,7 +11,7 @@ export default (
       <SimpleTerminal>
         <Appear transitionDuration={0}>
           <div>
-            <span style={{ opacity: 0.6 }}>$</span> npm start
+            <span style={{ opacity: 0.6 }}>$</span> npm <start />
           </div>
         </Appear>
         <Appear transitionDuration={0}>
@@ -44,7 +44,12 @@ export default (
         </Appear>
       </SimpleTerminal>
       <Notes>
-        <p />
+        <p>
+          Now to start our dev server is as easy as `npm start`. Read the output
+          carefully and you'll find that you'll recognize everything its doing.
+          At the end, you'll also see continuous output of the tasks that are
+          running in parallel.
+        </p>
       </Notes>
     </div>
   </Slide>

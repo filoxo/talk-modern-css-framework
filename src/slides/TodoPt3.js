@@ -16,7 +16,7 @@ export default (
         style={{ fontSize: '3.5vmin' }}
       >
         {`"scripts": {
-  "build": "postcss 'src/main.css' -o 'dist/main.min.css'",
+  "build": "postcss 'src/main.css' ...",
   "build:watch": "npm run build -- --watch",
   "serve": "lr-http-server",
   "start": "npm-run-all -p build:watch serve"
