@@ -23,10 +23,10 @@ export default (
       </p>
       <p>
         npm scripts are so commonly used that npm the tool has shortcuts for
-        them so there's usually a shared standard to get started with npm
-        projects. This means that I can reasonably expect to clone a project,
-        npm install, then run `npm start`, and have a working development setup.
-        Its awesome!
+        them, which in turn means that there is a shared standard to get started
+        with npm projects. This means that I can reasonably expect to clone a
+        project, npm install, then run `npm start`, and have a working
+        development setup. Its awesome!
       </p>
     </Notes>
   </Slide>

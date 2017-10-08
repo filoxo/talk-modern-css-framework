@@ -13,17 +13,24 @@ export default (
     </div>
     <Notes>
       <p>
-        PostCSS is a great tool that can replace the CSS preprocessing
-        frameworks. The main reason why I prefer PostCSS is that it brings you
-        closer to native CSS syntax, but that's just personal preference. The
-        most popular PostCSS plugin is Autoprefixer which adds all the necessary
-        vendor prefixes using data from CanIUse. That alone is a great feature.
+        PostCSS and cssnext are really only one block of the build stack that
+        I've been talking about, but I'm going to focus on it quite a bit right
+        now because togehter they enable all of the features that that I think
+        are awesome.
       </p>
       <p>
-        Next we'll couple that with cssnext, a PostCSS plugin that allows you to
-        use tomorrow's CSS syntax, today. Its sort of like Babel for JavaScript.
+        PostCSS is a JavaScript-based framework that will take your CSS and pipe
+        it through whatever plugins you'd like. PostCSS can replace the CSS
+        preprocessing language, bringing you closer to native CSS. The most
+        popular PostCSS plugin is Autoprefixer–which you may have already heard
+        of–which adds all the necessary vendor prefixes using data from CanIUse
+        compatibility database. That alone is an amazingly useful feature.
+      </p>
+      <p>
+        Couple that with cssnext, a PostCSS plugin that allows you to use
+        tomorrow's CSS syntax, today. Its sort of like Babel for JavaScript.
         This way you can use the newest language features with fallbacks or
-        polyfills depending on your browser compatibility target. We'll be using
+        prefixes depending on your browser compatibility target. We'll be using
         some of these features today.
       </p>
     </Notes>
