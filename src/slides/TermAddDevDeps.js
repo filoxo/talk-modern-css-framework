@@ -1,10 +1,10 @@
 import React from 'react'
-import { Slide, Appear, List, ListItem } from 'spectacle'
+import { Slide, Appear, List, ListItem, Notes } from 'spectacle'
 import SimpleTerminal from '../SimpleTerminal'
 
 export default (
   <Slide transition={['fade']}>
-    <List ordered start={9}>
+    <List ordered start={8}>
       <ListItem>Install development dependencies</ListItem>
     </List>
     <SimpleTerminal>
@@ -22,5 +22,15 @@ export default (
         </div>
       </Appear>
     </SimpleTerminal>
+    <Notes>
+      I've talked about installing dependencies that our project requires in
+      order to create a production build. We can also save dependencies to be
+      used during development with a `--save-dev` flag. In our case, we'll be
+      installing `npm-run-all` which allows us to run multiple tasks in
+      parallel; and `lr-http-server` which is a lightweight server that
+      automatically injects the page with new assets as they change. Of course,
+      if you are familiar with other tools that do the same feel free to plug
+      those in instead. I chose these two because of their simplicity.
+    </Notes>
   </Slide>
 )
