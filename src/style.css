@@ -16,3 +16,8 @@ a {
 .customCodeSlide h1 {
   font-size: 1em !important;
 }
+
+.spectacle-presenter-main, 
+.spectacle-slide > div {
+  max-width: 100%;
+}
