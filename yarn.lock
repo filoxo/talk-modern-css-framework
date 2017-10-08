@@ -6546,9 +6546,9 @@ spdy@^3.4.1:
     select-hose "^2.0.0"
     spdy-transport "^2.0.18"
 
-spectacle-code-slide@^0.4.0:
+"spectacle-code-slide@https://github.com/filoxo/spectacle-code-slide.git":
   version "0.4.0"
-  resolved "https://registry.yarnpkg.com/spectacle-code-slide/-/spectacle-code-slide-0.4.0.tgz#6a5c71bd2bd686f9843862bd36fe686596266d44"
+  resolved "https://github.com/filoxo/spectacle-code-slide.git#5224955ea7f26422614001386dc6add6e386ec79"
   dependencies:
     component-raf "^1.2.0"
     component-tween "^1.2.0"
