@@ -10,5 +10,11 @@ export default (
       #npmcss [1-5] feedback & comments
     </Heading>
     <Text>Text to (504) 299 6828</Text>
+    <Text style={{ marginTop: '3em' }}>
+      Slides available at{' '}
+      <a href="https://filoxo.github.io/talk-modern-css-framework/">
+        filoxo.github.io/talk-modern-css-framework
+      </a>
+    </Text>
   </Slide>
 )
