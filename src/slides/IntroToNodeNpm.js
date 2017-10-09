@@ -1,5 +1,5 @@
 import React from 'react'
-import { Slide, Notes } from 'spectacle'
+import { Slide, Notes, Text } from 'spectacle'
 
 export default (
   <Slide transition={['fade']}>
@@ -10,7 +10,18 @@ export default (
         d="M1,1v4h2v-3h1v3h1v-4h1v5h2v-4h1v2h-1v1h2v-4h1v4h2v-3h1v3h1v-3h1v3h1v-4"
       />
     </svg>
+    <Text style={{ marginTop: '10vmin' }}>
+      <small>
+        <a href="https://docs.npmjs.com/getting-started/installing-node">
+          Install Node
+        </a>
+      </small>
+    </Text>
     <Notes>
+      <p>
+        This talk is titled building your own pipeline. npm will be that
+        pipeline, and the output will be a CSS framework.
+      </p>
       <p>
         I want to talk about what npm in case there are some people don't have
         much experience with it. npm is actually two things: 1. it is the

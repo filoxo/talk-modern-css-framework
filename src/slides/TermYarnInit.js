@@ -39,7 +39,7 @@ export default (
         Alright, to get started I'm going to try to show you what steps you'll
         need to take in order to have a working pipeline that creates a
         development setup, builds your code, and publishes to npm. Its a total
-        of X steps.
+        of 13 steps.
       </p>
       <p>
         Step 1 is to setup your project workspace. So we'll make a directory for
