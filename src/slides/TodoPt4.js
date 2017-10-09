@@ -11,7 +11,7 @@ export default (
       <SimpleTerminal>
         <Appear transitionDuration={0}>
           <div>
-            <span style={{ opacity: 0.6 }}>$</span> npm <start />
+            <span style={{ opacity: 0.6 }}>$</span> npm start
           </div>
         </Appear>
         <Appear transitionDuration={0}>
