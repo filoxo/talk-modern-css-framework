@@ -1,6 +1,7 @@
 import Title from './Title'
 import AboutMe from './AboutMe'
 import WhyBuild from './WhyBuild'
+import WhyBuildImg from './WhyBuildImg'
 import IntroToNodeNpm from './IntroToNodeNpm'
 import WhyNpm from './WhyNpm'
 import PlugNPlay from './PlugNPlay'
@@ -24,6 +25,7 @@ const Slides = [
   Title,
   AboutMe,
   WhyBuild,
+  WhyBuildImg,
   IntroToNodeNpm,
   WhyNpm,
   PlugNPlay,
