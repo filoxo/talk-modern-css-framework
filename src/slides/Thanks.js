@@ -9,6 +9,6 @@ export default (
     <Heading size={4} textColor="heading">
       #npmcss [1-5] feedback & comments
     </Heading>
-    <Text>504 299 6828</Text>
+    <Text>Text to (504) 299 6828</Text>
   </Slide>
 )
