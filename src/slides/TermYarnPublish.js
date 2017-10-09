@@ -4,7 +4,7 @@ import SimpleTerminal from '../SimpleTerminal'
 
 export default (
   <Slide transition={['fade']}>
-    <List ordered start={11}>
+    <List ordered start={12}>
       <ListItem>Publish</ListItem>
     </List>
     <SimpleTerminal>
