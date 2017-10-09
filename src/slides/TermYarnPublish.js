@@ -1,10 +1,10 @@
 import React from 'react'
-import { Slide, Appear, List, ListItem } from 'spectacle'
+import { Slide, Appear, List, ListItem, Notes } from 'spectacle'
 import SimpleTerminal from '../SimpleTerminal'
 
 export default (
   <Slide transition={['fade']}>
-    <List ordered start={12}>
+    <List ordered start={13}>
       <ListItem>Publish</ListItem>
     </List>
     <SimpleTerminal>
@@ -33,5 +33,9 @@ export default (
         </div>
       </Appear>
     </SimpleTerminal>
+    <Notes>
+      Now we're ready to run `npm publish` which makes your code available to
+      anyone to simply `npm install`.
+    </Notes>
   </Slide>
 )
